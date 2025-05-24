@@ -1,0 +1,127 @@
+@import "tailwindcss";
+body{
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  height: 100vh;
+  background-image: url('../public/jumanh-jammaz-RWjM1BLnjxM-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-glow-red {
+  color: #ff1a1a;
+  text-shadow:
+    0 0 2px #ff1a1a,
+    0 0 4px #ff3333,
+    0 0 8px #ff6666;
+}
+
+.text-glow-green {
+  color: #00ff00;
+  text-shadow:
+    0 0 2px #00ff00,
+    0 0 4px #33ff33,
+    0 0 8px #66ff66;
+}
+
+.text-glow-white {
+  color: white;
+  text-shadow:
+    0 0 2px white,
+    0 0 4px #ccc;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.5s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.5s ease-out;
+}
+
+
+@layer utilities {
+  /* .text-led-red {
+    color: #ff1a1a;
+    text-shadow:
+      0 0 1px #ff1a1a,
+      0 0 2px #ff1a1a,
+      0 0 4px #ff3333;
+  }
+
+  .animate-led-pulse-red {
+    animation: led-pulse-red 2s ease-in-out infinite;
+  }
+
+  @keyframes led-pulse-red {
+    0%, 100% {
+      text-shadow:
+        0 0 1px #ff1a1a,
+        0 0 2px #ff1a1a,
+        0 0 4px #ff3333;
+    }
+    50% {
+      text-shadow:
+        0 0 0.5px #ff1a1a,
+        0 0 1px #ff1a1a,
+        0 0 2px #ff3333;
+    }
+  }
+  .text-led-white {
+    color: white;
+    text-shadow:
+      0 0 1px white,
+      0 0 2px white,
+      0 0 4px white;
+  }
+
+  .animate-led-pulse-white {
+    animation: led-pulse-white 2s ease-in-out infinite;
+  }
+
+  @keyframes led-pulse-white {
+    0%, 100% {
+      text-shadow:
+        0 0 1px white,
+        0 0 2px white,
+        0 0 4px white;
+    }
+    50% {
+      text-shadow:
+        0 0 0.5px white,
+        0 0 1px white,
+        0 0 2px white;
+    }
+  }
+}
+
+
+#root {
+  margin: 0 auto; */
+}
